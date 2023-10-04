@@ -11,6 +11,12 @@ export const styles = StyleSheet.create({
       padding: 20,
       fontSize: 20,
       fontWeight: 'bold',
+    },
+    textInput :{
+      backgroundColor: '#334213',
+      borderColor: '#233233',
+      fontSize: 20,
+      fontWeight: 'bold',
     }
   });
   
