@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Alert, Button, View } from 'react-native';
+import { Alert, Button, TextInput, View, } from 'react-native';
 import { styles } from './styles';
 import * as Notifications from 'expo-notifications';
 import { StatusBar } from 'expo-status-bar';
@@ -14,6 +14,8 @@ Notifications.setNotificationHandler({
 });
 
 export default function App() {
+  const [titulo, setTitulo] = useState("");
+  const [descricao, setDescricao] = useState("");
   const [date, setDate] = useState(new Date());
   const [isDatePickerVisible, setDatePickerVisibility] = useState(false);
 
@@ -27,8 +29,8 @@ export default function App() {
     
     await Notifications.scheduleNotificationAsync({
       content: {
-        title: "Olá!",
-        body: "você tem uma nova mensagem!",
+        title: titulo,
+        body: descricao,
       },
       trigger: date
     });
@@ -47,8 +49,12 @@ export default function App() {
     hideDatePicker();
   };
 
+  
+
   return (
     <View style={styles.container}>
+      <TextInput value={titulo} onChangeText={setTitulo} placeholder="Titulo" />
+
       <Button title="Selecionar data e hora" onPress={showDatePicker} />
       <DateTimePickerModal
         isVisible={isDatePickerVisible}
@@ -56,6 +62,8 @@ export default function App() {
         onConfirm={handleConfirm}
         onCancel={hideDatePicker}
       />
+       <TextInput value={descricao} onChangeText={setDescricao} placeholder="descrição" />
+
       <Button title="chamar notificação" onPress={handleCallNotification} />
       <StatusBar style='auto'/>
     </View>
