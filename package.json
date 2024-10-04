@@ -10,12 +10,16 @@
   },
   "dependencies": {
     "@react-native-community/datetimepicker": "7.2.0",
+<<<<<<< HEAD
     "@react-navigation/native": "^6.1.18",
     "@react-navigation/native-stack": "^6.11.0",
+=======
+>>>>>>> ed87a4716a99d3bd1013703706242d5197777518
     "expo": "~49.0.13",
     "expo-notifications": "~0.20.1",
     "expo-status-bar": "~1.6.0",
     "react": "18.2.0",
+<<<<<<< HEAD
     "react-native": "0.72.10",
     "react-native-gesture-handler": "~2.12.0",
     "react-native-modal-datetime-picker": "^17.1.0",
@@ -24,11 +28,18 @@
     "react-native-svg": "^15.7.1",
     "react-native-svg-transformer": "^1.5.0",
     "expo-av": "~13.4.1"
+=======
+    "react-native": "0.72.5",
+    "react-native-modal-datetime-picker": "^17.1.0"
+>>>>>>> ed87a4716a99d3bd1013703706242d5197777518
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "@types/react": "~18.2.14",
+<<<<<<< HEAD
     "@types/react-native": "^0.72.8",
+=======
+>>>>>>> ed87a4716a99d3bd1013703706242d5197777518
     "typescript": "^5.1.3"
   },
   "private": true

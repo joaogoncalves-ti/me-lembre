@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { StyleSheet } from 'react-native';
 
 // Definindo os estilos da aplicação usando o StyleSheet do React Native
@@ -123,3 +124,27 @@ export const styles = StyleSheet.create({
     marginTop: 20, // Margem acima
   },
 });
+=======
+import { StyleSheet } from "react-native";
+
+export const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: '#fff',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    button : {
+      padding: 20,
+      fontSize: 20,
+      fontWeight: 'bold',
+    },
+    textInput :{
+      backgroundColor: '#334213',
+      borderColor: '#233233',
+      fontSize: 20,
+      fontWeight: 'bold',
+    }
+  });
+  
+>>>>>>> ed87a4716a99d3bd1013703706242d5197777518
